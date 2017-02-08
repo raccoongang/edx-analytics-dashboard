@@ -2,7 +2,7 @@
     <% var filterId = 'filter-' + filterKey; %>
     <hr>
     <label for="<%- filterId %>">
-        <%- selectDisplayName %>
+        <%- sectionDisplayName %>
     </label>
     <select id="<%- filterId %>" class="form-control">
         <% _.each(filterValues, function (filterValue) { %>

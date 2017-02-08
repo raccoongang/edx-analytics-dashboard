@@ -51,8 +51,8 @@ define(function(require) {
                     class: DropDownFilter,
                     options: _({
                         filterKey: 'cohort',
-                        filterValues: this.options.courseMetadata.get('cohorts'),
-                        selectDisplayName: gettext('Cohort Groups')
+                        filterValues: this.options.courseMetadata.getFilterOptions('cohorts'),
+                        sectionDisplayName: gettext('Cohort Groups')
                     }).defaults(defaultFilterOptions)
                 },
                 {
@@ -60,8 +60,8 @@ define(function(require) {
                     class: DropDownFilter,
                     options: _({
                         filterKey: 'enrollment_mode',
-                        filterValues: this.options.courseMetadata.get('enrollment_modes'),
-                        selectDisplayName: gettext('Enrollment Tracks')
+                        filterValues: this.options.courseMetadata.getFilterOptions('enrollment_modes'),
+                        sectionDisplayName: gettext('Enrollment Tracks')
                     }).defaults(defaultFilterOptions)
                 },
                 {
@@ -70,10 +70,12 @@ define(function(require) {
                     options: _({
                         filterKey: 'ignore_segments',
                         // inactive is the only segment filter on the learner roster page
-                        filterValues: _(this.options.courseMetadata.get('segments')).pick('inactive'),
-                        // Translators: inactive meaning that these learners have not interacted with the course
-                        // recently.
-                        selectDisplayName: gettext('Hide Inactive Learners')
+                        filterValues: [{
+                            name: 'inactive',
+                            // Translators: inactive meaning that these learners have not interacted with the
+                            // course recently.
+                            displayName: gettext('Hide Inactive Learners'),
+                        }]
                     }).defaults(defaultFilterOptions)
                 }
             ];

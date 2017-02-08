@@ -46,7 +46,7 @@ define(function(require) {
                     start_date: '2016-11-17T050000',
                     end_date: '2016-12-01T000000'
                 })],
-                _.extend({mode: 'client'}, defaultOptions.collectionOptions)
+                defaultOptions.collectionOptions
             );
 
             if (pageSize) {

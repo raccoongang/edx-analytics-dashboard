@@ -29,7 +29,7 @@ define(function(require) {
                     verified_enrollment: 1000
                 })
             ];
-            courseList = new CourseList(courses, {mode: 'client'});
+            courseList = new CourseList(courses);
         });
 
         describe('registered sort field', function() {

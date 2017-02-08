@@ -35,8 +35,7 @@ define(function(require) {
             }).render();
 
             courseListCollection = new CourseListCollection(this.options.courseListJson, {
-                downloadUrl: this.options.courseListDownloadUrl,
-                mode: 'client'
+                downloadUrl: this.options.courseListDownloadUrl
             });
 
             rootView = new RootView({
