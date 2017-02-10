@@ -5,6 +5,7 @@ define(function(require) {
     'use strict';
 
     var $ = require('jquery'),
+        _ = require('underscore'),
         ListCollection = require('components/generic-list/common/collections/collection'),
         CourseModel = require('course-list/common/models/course'),
         FieldFilter = require('course-list/common/filters/field-filter'),
@@ -67,7 +68,7 @@ define(function(require) {
             var activeFilterFields = this.getActiveFilterFields(),
                 filters = [];
             if (this.searchMatcher) {
-                filters.push(new SearchFilter(this.searchMatcher))
+                filters.push(new SearchFilter(this.searchMatcher));
             }
 
             _(activeFilterFields).each(function(value, key) {
@@ -81,7 +82,7 @@ define(function(require) {
             return new FilterSet('AND', filters);
         },
 
-        updateSearch: function () {
+        updateSearch: function() {
             if (this.pageableCollection) {
                 this.pageableCollection.getFirstPage({silent: true});
             }

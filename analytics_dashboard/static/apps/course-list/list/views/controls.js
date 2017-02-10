@@ -33,19 +33,18 @@ define(function(require) {
                 appClass: this.options.appClass
             };
 
-            this.childViews = [
-                {
-                    region: 'search',
-                    class: CourseListSearch,
-                    options: {
-                        collection: this.options.collection,
-                        name: 'text_search',
-                        placeholder: gettext('Find a course'),
-                        trackingModel: this.options.trackingModel
-                    }
-                }]
+            this.childViews = [{
+                region: 'search',
+                class: CourseListSearch,
+                options: {
+                    collection: this.options.collection,
+                    name: 'text_search',
+                    placeholder: gettext('Find a course'),
+                    trackingModel: this.options.trackingModel
+                }
+            }];
 
-            if(this.options.filteringEnabled) {
+            if (this.options.filteringEnabled) {
                 this.childViews = this.childViews.concat([{
                     region: 'availabilityFilter',
                     class: CheckboxFilter,
@@ -69,5 +68,3 @@ define(function(require) {
 
     return CourseListControlsView;
 });
-
-

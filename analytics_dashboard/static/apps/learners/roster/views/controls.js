@@ -74,7 +74,7 @@ define(function(require) {
                             name: 'inactive',
                             // Translators: inactive meaning that these learners have not interacted with the
                             // course recently.
-                            displayName: gettext('Hide Inactive Learners'),
+                            displayName: gettext('Hide Inactive Learners')
                         }]
                     }).defaults(defaultFilterOptions)
                 }

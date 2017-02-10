@@ -49,7 +49,7 @@ define(function(require) {
                         filterKey: filterKey,
                         displayName: filterDisplayName === '' ? formattedFilterVal : displayName
                     });
-                }, this)
+                }, this);
             }, this);
 
             return formattedFilters;
@@ -74,9 +74,7 @@ define(function(require) {
         },
 
         clearOneFilter: function(event) {
-            var filterKey;
             event.preventDefault();
-            filterKey = $(event.currentTarget).data('filter-key');
             this.options.collection.clearFilter(
                 $(event.currentTarget).data('filter-key'),
                 $(event.currentTarget).data('filter-name')

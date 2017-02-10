@@ -2,11 +2,10 @@
  * Wrapper around a regex matcher.  Returned results are those that match
  * the regex.
  */
-define(function(require) {
+define(function() {
     'use strict';
 
-    var _ = require('underscore'),
-        SearchFilter;
+    var SearchFilter;
 
     SearchFilter = function(matcher) {
         this.matcher = matcher;

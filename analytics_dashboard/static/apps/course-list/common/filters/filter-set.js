@@ -10,7 +10,7 @@ define(function(require) {
     FilterSet = function(mode, filters) {
         var validModes = ['AND', 'OR'];
         if (!_(validModes).contains(mode)) {
-            throw 'Only valid modes are: ' + validModes.join(', ');
+            throw 'Only valid modes are: ' + validModes.join(', ');  // eslint-disable-line no-throw-literal
         }
         this.mode = mode;
         this.filters = filters;

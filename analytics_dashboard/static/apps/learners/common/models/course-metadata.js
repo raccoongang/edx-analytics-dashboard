@@ -33,7 +33,7 @@ define(function(require) {
                     name: key,
                     displayName: key,
                     count: count
-                }
+                };
             });
         },
 

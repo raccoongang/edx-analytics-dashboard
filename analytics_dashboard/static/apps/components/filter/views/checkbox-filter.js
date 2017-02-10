@@ -23,8 +23,9 @@ define(function(require) {
 
             _(templateOptions.filterValues).each(function(templateOption) {
                 var filterValues = collection.getFilterFieldValue(this.options.filterKey);
-                templateOption.isChecked =
-                    !_(filterValues).isNull() && filterValues.indexOf(templateOption.name) > -1;
+                _(templateOption).extend({
+                    isChecked: !_(filterValues).isNull() && filterValues.indexOf(templateOption.name) > -1
+                });
             }, this);
 
             return templateOptions;

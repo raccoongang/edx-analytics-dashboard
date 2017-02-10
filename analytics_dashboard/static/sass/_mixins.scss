@@ -93,11 +93,11 @@
 
     }
 
-    // bootstrap defaults are to bold the labels
     .#{$app-name}-filter {
 
       padding-top: $padding-large-vertical * 2;
 
+      // bootstrap defaults are to bold the labels
       label {
         font-weight: normal;
       }

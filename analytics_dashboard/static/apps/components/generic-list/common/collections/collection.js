@@ -118,7 +118,7 @@ define(function(require) {
             var removedFilter = {},
                 currentValues = this.getFilterFieldValue(filterKey);
 
-            if(filterKey === PagingCollection.DefaultSearchKey || currentValues.split(',').length === 1) {
+            if (filterKey === PagingCollection.DefaultSearchKey || currentValues.split(',').length === 1) {
                 this.unsetFilterField(filterKey);
             } else {
                 // there are multiple values associated with this key, so just remove the one
@@ -144,7 +144,7 @@ define(function(require) {
          */
         getFilterValueDisplayName: function(filterKey, filterValue) {
             var filterNameToDisplay = this.filterNameToDisplay;
-            if(filterNameToDisplay && _(filterNameToDisplay).has(filterKey) &&
+            if (filterNameToDisplay && _(filterNameToDisplay).has(filterKey) &&
                 _(filterNameToDisplay[filterKey]).has(filterValue)) {
                 return filterNameToDisplay[filterKey][filterValue];
             } else {

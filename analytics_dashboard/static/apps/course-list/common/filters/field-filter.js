@@ -1,11 +1,10 @@
 /**
  * Returns results that match the field and value.
  */
-define(function(require) {
+define(function() {
     'use strict';
 
-    var _ = require('underscore'),
-        FieldFilter;
+    var FieldFilter;
 
     FieldFilter = function(field, value) {
         this.field = field;
