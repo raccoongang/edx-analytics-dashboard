@@ -38,8 +38,8 @@ define(function(require) {
                 downloadUrl: this.options.courseListDownloadUrl,
                 filterNameToDisplay: {
                     pacing_type: {
-                        instructor_paced: gettext('Instructor Paced'),
-                        self_paced: gettext('Self Paced')
+                        instructor_paced: gettext('Instructor-Paced'),
+                        self_paced: gettext('Self-Paced')
                     },
                     availability: {
                         Upcoming: gettext('Upcoming'),

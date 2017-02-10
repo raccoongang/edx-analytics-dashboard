@@ -1,8 +1,7 @@
 <% if (!_.isEmpty(filterValues)) { %>
     <% var filterId = 'filter-' + filterKey; %>
-    <hr>
     <% if (!_.isEmpty(sectionDisplayName)) { %>
-        <div><%- sectionDisplayName %></div>
+        <div class="filters-label"><%- sectionDisplayName %></div>
     <% } %>
     <div id="<%- filterId %>">
         <% _.each(filterValues, function (filterValue) { %>
