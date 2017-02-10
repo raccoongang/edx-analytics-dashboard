@@ -44,7 +44,8 @@ define(function(require) {
                     availability: {
                         Upcoming: gettext('Upcoming'),
                         Current: gettext('Current'),
-                        Archived: gettext('Archived')
+                        Archived: gettext('Archived'),
+                        unknown: gettext('Unknown')
                     }
                 }
             });

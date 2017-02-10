@@ -11,6 +11,11 @@ define(function(require) {
         FilterSet = require('course-list/common/filters/filter-set'),
         SearchFilter = require('course-list/common/filters/search-filter'),
 
+        // this is a lightweight collection that will store the original models
+        // in order to restore to the full/original state after filtering is cleared
+        ShadowCourseListCollection = ListCollection.extend({
+            model: CourseModel
+        }),
         CourseListCollection;
 
     CourseListCollection = ListCollection.extend({
@@ -34,7 +39,7 @@ define(function(require) {
             ListCollection.prototype.initialize.call(this, models, options);
 
             // original collection are saved for filtering and restoring when filters are unset
-            this.shadowCollection = new ListCollection(models, options);
+            this.shadowCollection = new ShadowCourseListCollection(models);
 
             this.registerSortableField('catalog_course_title', gettext('Course Name'));
             this.registerSortableField('start_date', gettext('Start Date'));
@@ -121,6 +126,9 @@ define(function(require) {
                 }, {
                     name: 'Archived',
                     displayName: this.getFilterValueDisplayName('availability', 'Archived')
+                }, {
+                    name: 'unknown',
+                    displayName: this.getFilterValueDisplayName('availability', 'unknown')
                 }]
             };
 
