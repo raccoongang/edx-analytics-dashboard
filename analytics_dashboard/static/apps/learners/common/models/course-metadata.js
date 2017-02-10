@@ -28,13 +28,17 @@ define(function(require) {
          * Returns the filters values and options for the filter UI.
          */
         getFilterOptions: function(filter) {
-            return _(this.get(filter)).map(function(count, key) {
-                return {
-                    name: key,
-                    displayName: key,
-                    count: count
-                };
-            });
+            if (this.has(filter)) {
+                return _(this.get(filter)).map(function(count, key) {
+                    return {
+                        name: key,
+                        displayName: key,
+                        count: count
+                    };
+                });
+            } else {
+                return undefined;
+            }
         },
 
         renameEngagementRanges: function(engagementRanges) {

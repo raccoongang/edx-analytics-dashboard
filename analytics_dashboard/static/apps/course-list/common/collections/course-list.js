@@ -41,6 +41,12 @@ define(function(require) {
 
             // original collection are saved for filtering and restoring when filters are unset
             this.shadowCollection = new ShadowCourseListCollection(models);
+            this.shadowCollection.listenTo(this, 'add', function(model, collection, ops) {
+                this.add(model, ops);
+            });
+            this.shadowCollection.listenTo(this, 'remove', function(model, collection, ops) {
+                this.remove(model, ops);
+            });
 
             this.registerSortableField('catalog_course_title', gettext('Course Name'));
             this.registerSortableField('start_date', gettext('Start Date'));

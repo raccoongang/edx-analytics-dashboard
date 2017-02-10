@@ -25,8 +25,10 @@ define(function(require) {
         },
 
         initialize: function(options) {
-            var defaultFilterOptions;
+            var defaultFilterOptions,
+                courseMetadata;
             this.options = options || {};
+            courseMetadata = this.options.courseMetadata;
 
             defaultFilterOptions = {
                 collection: this.options.collection,
@@ -45,26 +47,35 @@ define(function(require) {
                         placeholder: gettext('Find a learner'),
                         trackingModel: this.options.trackingModel
                     }
-                },
-                {
+                }
+            ];
+
+            if (!_(courseMetadata.get('cohorts')).isEmpty()) {
+                this.childViews = this.childViews.concat({
                     region: 'cohortFilter',
                     class: DropDownFilter,
                     options: _({
                         filterKey: 'cohort',
-                        filterValues: this.options.courseMetadata.getFilterOptions('cohorts'),
+                        filterValues: courseMetadata.getFilterOptions('cohorts'),
                         sectionDisplayName: gettext('Cohort Groups')
                     }).defaults(defaultFilterOptions)
-                },
-                {
+                });
+            }
+
+            if (!_(courseMetadata.get('enrollment_modes')).isEmpty()) {
+                this.childViews = this.childViews.concat({
                     region: 'enrollmentTrackFilter',
                     class: DropDownFilter,
                     options: _({
                         filterKey: 'enrollment_mode',
-                        filterValues: this.options.courseMetadata.getFilterOptions('enrollment_modes'),
+                        filterValues: courseMetadata.getFilterOptions('enrollment_modes'),
                         sectionDisplayName: gettext('Enrollment Tracks')
                     }).defaults(defaultFilterOptions)
-                },
-                {
+                });
+            }
+
+            if (!_(courseMetadata.get('segments')).isEmpty()) {
+                this.childViews = this.childViews.concat({
                     region: 'activeFilter',
                     class: CheckboxFilter,
                     options: _({
@@ -77,8 +88,8 @@ define(function(require) {
                             displayName: gettext('Hide Inactive Learners')
                         }]
                     }).defaults(defaultFilterOptions)
-                }
-            ];
+                });
+            }
         }
     });
 
