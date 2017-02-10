@@ -43,7 +43,10 @@ define(function(require) {
                         placeholder: gettext('Find a course'),
                         trackingModel: this.options.trackingModel
                     }
-                }, {
+                }]
+
+            if(this.options.filteringEnabled) {
+                this.childViews = this.childViews.concat([{
                     region: 'availabilityFilter',
                     class: CheckboxFilter,
                     options: _({
@@ -59,9 +62,8 @@ define(function(require) {
                         filterValues: this.options.collection.getFilterValues('pacing_type'),
                         sectionDisplayName: this.options.collection.filterDisplayName('pacing_type')
                     }).defaults(defaultFilterOptions)
-                }
-
-            ];
+                }]);
+            }
         }
     });
 

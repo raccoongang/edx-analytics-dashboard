@@ -63,7 +63,8 @@ define(function(require) {
                     hasData: _.isObject(this.options.courseListJson),
                     pageModel: pageModel,
                     rootView: rootView,
-                    trackingModel: initModels.models.trackingModel
+                    trackingModel: initModels.models.trackingModel,
+                    filteringEnabled: this.options.filteringEnabled
                 })
             });
 
