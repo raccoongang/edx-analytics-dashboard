@@ -15,6 +15,9 @@ define(function(require) {
 
             this.url = options.url;
             this.downloadUrl = options.downloadUrl;
+
+            // a map of the filterKey to filterValue to display name
+            this.filterNameToDisplay = options.filterNameToDisplay;
         },
 
         fetch: function(options) {
@@ -133,6 +136,20 @@ define(function(require) {
             this.unsetAllFilterFields();
             this.refresh();
             this.trigger('backgrid:filtersCleared', originalFilters);
+        },
+
+        /**
+         * Returns the display named used for the filter values.  Default is to return
+         * the filterValue.  Provide filterNameToDisplay as an option to enable this.
+         */
+        getFilterValueDisplayName: function(filterKey, filterValue) {
+            var filterNameToDisplay = this.filterNameToDisplay;
+            if(filterNameToDisplay && _(filterNameToDisplay).has(filterKey) &&
+                _(filterNameToDisplay[filterKey]).has(filterValue)) {
+                return filterNameToDisplay[filterKey][filterValue];
+            } else {
+                return filterValue.charAt(0).toUpperCase() + filterValue.slice(1);
+            }
         }
     });
 

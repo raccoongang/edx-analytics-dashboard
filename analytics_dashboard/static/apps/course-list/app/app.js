@@ -35,7 +35,18 @@ define(function(require) {
             }).render();
 
             courseListCollection = new CourseListCollection(this.options.courseListJson, {
-                downloadUrl: this.options.courseListDownloadUrl
+                downloadUrl: this.options.courseListDownloadUrl,
+                filterNameToDisplay: {
+                    pacing_type: {
+                        instructor_paced: gettext('Instructor Paced'),
+                        self_paced: gettext('Self Paced')
+                    },
+                    availability: {
+                        Upcoming: gettext('Upcoming'),
+                        Current: gettext('Current'),
+                        Archived: gettext('Archived')
+                    }
+                }
             });
 
             rootView = new RootView({

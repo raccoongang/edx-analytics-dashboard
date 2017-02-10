@@ -27,7 +27,8 @@ define(function(require) {
         },
 
         getFormattedActiveFilters: function(activeFilters) {
-            var formattedFilters = [];
+            var formattedFilters = [],
+                collection = this.options.collection;
 
             _(activeFilters).each(function(filterVal, filterKey) {
                 // create individual filters for each filter value (split by ','),
@@ -36,8 +37,8 @@ define(function(require) {
                     [filterVal] : filterVal.split(',');
                 _(filterValues).each(function(filter) {
                     var formattedFilterVal = (filterKey === 'text_search') ?
-                        '"' + filter + '"' : filter.charAt(0).toUpperCase() + filter.slice(1),
-                        filterDisplayName = this.options.collection.filterDisplayName(filterKey),
+                        '"' + filter + '"' : collection.getFilterValueDisplayName(filterKey, filter),
+                        filterDisplayName = collection.filterDisplayName(filterKey),
                         // Translators: this is a label describing a filter selection that the user initiated.
                         displayName = _.template(gettext('<%= filterDisplayName %>: <%= filterVal %>'))({
                             filterDisplayName: filterDisplayName,

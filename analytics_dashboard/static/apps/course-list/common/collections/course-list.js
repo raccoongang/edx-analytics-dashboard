@@ -107,20 +107,20 @@ define(function(require) {
             var filters = {
                 pacing_type: [{
                     name: 'instructor_paced',
-                    displayName: gettext('Instructor Paced')
+                    displayName: this.getFilterValueDisplayName('pacing_type', 'instructor_paced')
                 }, {
                     name: 'self_paced',
-                    displayName: gettext('Self Paced')
+                    displayName: this.getFilterValueDisplayName('pacing_type', 'self_paced')
                 }],
                 availability: [{
                     name: 'Upcoming',
-                    displayName: gettext('Upcoming')
+                    displayName: this.getFilterValueDisplayName('availability', 'Upcoming')
                 }, {
                     name: 'Current',
-                    displayName: gettext('Current')
+                    displayName: this.getFilterValueDisplayName('availability', 'Current')
                 }, {
                     name: 'Archived',
-                    displayName: gettext('Archived')
+                    displayName: this.getFilterValueDisplayName('availability', 'Archived')
                 }]
             };
 
