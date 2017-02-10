@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col col-12 sm-col-12 md-col-8 md-pre-2">
+  <div class="col col-12 sm-col-12 md-col-10 md-pre-2">
     <div class="course-list-active-filters"></div>
   </div>
 </div>
