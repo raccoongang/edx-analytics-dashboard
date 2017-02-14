@@ -108,7 +108,7 @@ class CourseIndexTests(AnalyticsDashboardWebAppTestMixin, WebAppTest):
         Tests that a user can check a filter option to filter the course list.
         """
         # Filter is present
-        filter = self.page.q(css='#' + filter_id)
+        filter_box = self.page.q(css='#' + filter_id)
         self.assertTrue(filter.present)
 
         if clear_existing_filters:
@@ -118,7 +118,7 @@ class CourseIndexTests(AnalyticsDashboardWebAppTestMixin, WebAppTest):
             self.check_cleared()
 
         # Perform filter
-        filter.click()
+            filter_box.click()
 
         # Check that active filters show search value
         EmptyPromise(
@@ -230,8 +230,9 @@ class CourseIndexTests(AnalyticsDashboardWebAppTestMixin, WebAppTest):
             "self_paced": "Self-Paced",
         }
         course_in_filters = ['Upcoming', 'self_paced']
-        for id, display_name in filters.items():
-            self._test_filter(id, display_name, course_in_filter=(True if id in course_in_filters else False))
+        for filter_id, display_name in filters.items():
+            self._test_filter(filter_id, display_name,
+                              course_in_filter=(True if filter_id in course_in_filters else False))
 
     def _test_multiple_filters(self, filter_sequence):
         """
@@ -242,12 +243,12 @@ class CourseIndexTests(AnalyticsDashboardWebAppTestMixin, WebAppTest):
             1. the filter display name
             2. boolean for whether the test course is shown in the list after the filter is applied.
         """
-        for index, filter in enumerate(filter_sequence):
-            id = filter[0]
-            name = filter[1]
-            course_shown = filter[2]
+        for index, filter_data in enumerate(filter_sequence):
+            filter_id = filter_data[0]
+            name = filter_data[1]
+            course_shown = filter_data[2]
             first_filter = index == 0
-            self._test_filter(id, name, course_in_filter=course_shown, clear_existing_filters=first_filter)
+            self._test_filter(filter_id, name, course_in_filter=course_shown, clear_existing_filters=first_filter)
 
     def _test_filters(self):
         self._test_individual_filters()
