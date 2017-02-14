@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-03 15:14-0500\n"
+"POT-Creation-Date: 2017-02-14 10:47-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,111 +17,112 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: static/apps/components/download/views/download-data.js:25
-#: static/dist/apps/learners/app/learners-main.js:31277
+#: static/dist/apps/learners/app/learners-main.js:31332
 msgid "Download CSV"
 msgstr ""
 
 #: static/apps/components/download/views/download-data.js:26
-#: static/dist/apps/learners/app/learners-main.js:31278
+#: static/dist/apps/learners/app/learners-main.js:31333
 msgid "Download search results to CSV"
 msgstr ""
 
 #: static/apps/components/filter/views/drop-down-filter.js:31
-#: static/dist/apps/learners/app/learners-main.js:32281
+#: static/dist/apps/learners/app/learners-main.js:32347
 msgid "All"
 msgstr ""
 
-#: static/apps/components/filter/views/filter.js:88
-#: static/dist/apps/learners/app/learners-main.js:32167
+#: static/apps/components/filter/views/filter.js:90
+#: static/dist/apps/course-list/app/course-list-main.js:1837
+#: static/dist/apps/learners/app/learners-main.js:32224
 msgid "<%= name %> (<%= count %>)"
 msgstr ""
 
-#: static/apps/components/generic-list/list/views/active-filters.js:35
-#: static/dist/apps/course-list/app/course-list-main.js:1409
-#: static/dist/apps/learners/app/learners-main.js:31156
+#: static/apps/components/generic-list/list/views/active-filters.js:43
+#: static/dist/apps/course-list/app/course-list-main.js:1652
+#: static/dist/apps/learners/app/learners-main.js:31208
 msgid "<%= filterDisplayName %>: <%= filterVal %>"
 msgstr ""
 
-#: static/apps/components/generic-list/list/views/active-filters.js:55
-#: static/dist/apps/course-list/app/course-list-main.js:1429
-#: static/dist/apps/learners/app/learners-main.js:31176
+#: static/apps/components/generic-list/list/views/active-filters.js:68
+#: static/dist/apps/course-list/app/course-list-main.js:1677
+#: static/dist/apps/learners/app/learners-main.js:31233
 msgid "Filters In Use:"
 msgstr ""
 
-#: static/apps/components/generic-list/list/views/active-filters.js:56
-#: static/dist/apps/course-list/app/course-list-main.js:1430
-#: static/dist/apps/learners/app/learners-main.js:31177
+#: static/apps/components/generic-list/list/views/active-filters.js:69
+#: static/dist/apps/course-list/app/course-list-main.js:1678
+#: static/dist/apps/learners/app/learners-main.js:31234
 msgid "Click to remove this filter"
 msgstr ""
 
-#: static/apps/components/generic-list/list/views/active-filters.js:58
-#: static/dist/apps/course-list/app/course-list-main.js:1432
-#: static/dist/apps/learners/app/learners-main.js:31179
+#: static/apps/components/generic-list/list/views/active-filters.js:71
+#: static/dist/apps/course-list/app/course-list-main.js:1680
+#: static/dist/apps/learners/app/learners-main.js:31236
 msgid "Clear"
 msgstr ""
 
-#: static/apps/components/generic-list/list/views/active-filters.js:59
-#: static/dist/apps/course-list/app/course-list-main.js:1433
-#: static/dist/apps/learners/app/learners-main.js:31180
+#: static/apps/components/generic-list/list/views/active-filters.js:72
+#: static/dist/apps/course-list/app/course-list-main.js:1681
+#: static/dist/apps/learners/app/learners-main.js:31237
 msgid "Click to remove all filters"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/base-header-cell.js:71
-#: static/dist/apps/course-list/app/course-list-main.js:4936
-#: static/dist/apps/learners/app/learners-main.js:31436
+#: static/dist/apps/course-list/app/course-list-main.js:5412
+#: static/dist/apps/learners/app/learners-main.js:31491
 msgid "sort ascending"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/base-header-cell.js:73
-#: static/dist/apps/course-list/app/course-list-main.js:4938
-#: static/dist/apps/learners/app/learners-main.js:31438
+#: static/dist/apps/course-list/app/course-list-main.js:5414
+#: static/dist/apps/learners/app/learners-main.js:31493
 msgid "sort descending"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/base-header-cell.js:76
-#: static/dist/apps/course-list/app/course-list-main.js:4941
-#: static/dist/apps/learners/app/learners-main.js:31441
+#: static/dist/apps/course-list/app/course-list-main.js:5417
+#: static/dist/apps/learners/app/learners-main.js:31496
 msgid "click to sort"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/paging-footer.js:69
-#: static/dist/apps/course-list/app/course-list-main.js:5203
-#: static/dist/apps/learners/app/learners-main.js:31703
+#: static/dist/apps/course-list/app/course-list-main.js:5679
+#: static/dist/apps/learners/app/learners-main.js:31758
 msgid "first page"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/paging-footer.js:71
-#: static/dist/apps/course-list/app/course-list-main.js:5205
-#: static/dist/apps/learners/app/learners-main.js:31705
+#: static/dist/apps/course-list/app/course-list-main.js:5681
+#: static/dist/apps/learners/app/learners-main.js:31760
 msgid "previous page"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/paging-footer.js:73
-#: static/dist/apps/course-list/app/course-list-main.js:5207
-#: static/dist/apps/learners/app/learners-main.js:31707
+#: static/dist/apps/course-list/app/course-list-main.js:5683
+#: static/dist/apps/learners/app/learners-main.js:31762
 msgid "next page"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/paging-footer.js:75
-#: static/dist/apps/course-list/app/course-list-main.js:5209
-#: static/dist/apps/learners/app/learners-main.js:31709
+#: static/dist/apps/course-list/app/course-list-main.js:5685
+#: static/dist/apps/learners/app/learners-main.js:31764
 msgid "last page"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/paging-footer.js:77
-#: static/dist/apps/course-list/app/course-list-main.js:5211
-#: static/dist/apps/learners/app/learners-main.js:31711
+#: static/dist/apps/course-list/app/course-list-main.js:5687
+#: static/dist/apps/learners/app/learners-main.js:31766
 msgid "page"
 msgstr ""
 
 #: static/apps/components/generic-list/list/views/table.js:27
-#: static/dist/apps/course-list/app/course-list-main.js:5270
-#: static/dist/apps/learners/app/learners-main.js:31770
+#: static/dist/apps/course-list/app/course-list-main.js:5746
+#: static/dist/apps/learners/app/learners-main.js:31825
 msgid "Generic List"
 msgstr ""
 
 #: static/apps/components/loading/views/loading-view.js:20
-#: static/dist/apps/learners/app/learners-main.js:27681
+#: static/dist/apps/learners/app/learners-main.js:27725
 msgid "Loading..."
 msgstr ""
 
@@ -160,66 +161,96 @@ msgstr ""
 msgid "Network error"
 msgstr ""
 
+#: static/apps/course-list/app/app.js:41
+#: static/dist/apps/course-list/app/course-list-main.js:6649
+msgid "Instructor-Paced"
+msgstr ""
+
+#: static/apps/course-list/app/app.js:42
+#: static/dist/apps/course-list/app/course-list-main.js:6650
+msgid "Self-Paced"
+msgstr ""
+
+#: static/apps/course-list/app/app.js:45
+#: static/dist/apps/course-list/app/course-list-main.js:6653
+msgid "Upcoming"
+msgstr ""
+
+#: static/apps/course-list/app/app.js:46
+#: static/dist/apps/course-list/app/course-list-main.js:6654
+msgid "Current"
+msgstr ""
+
+#: static/apps/course-list/app/app.js:47
+#: static/dist/apps/course-list/app/course-list-main.js:6655
+msgid "Archived"
+msgstr ""
+
+#: static/apps/course-list/app/app.js:48
+#: static/dist/apps/course-list/app/course-list-main.js:6656
+msgid "Unknown"
+msgstr ""
+
 #: static/apps/course-list/app/controller.js:48
-#: static/apps/course-list/app/controller.js:106
-#: static/dist/apps/course-list/app/course-list-main.js:5802
-#: static/dist/apps/course-list/app/course-list-main.js:5860
+#: static/apps/course-list/app/controller.js:107
+#: static/dist/apps/course-list/app/course-list-main.js:6258
+#: static/dist/apps/course-list/app/course-list-main.js:6317
 msgid "Course List"
 msgstr ""
 
-#: static/apps/course-list/app/controller.js:96
+#: static/apps/course-list/app/controller.js:97
 #: static/apps/learners/app/controller.js:94
-#: static/dist/apps/course-list/app/course-list-main.js:5850
-#: static/dist/apps/learners/app/learners-main.js:32716
+#: static/dist/apps/course-list/app/course-list-main.js:6307
+#: static/dist/apps/learners/app/learners-main.js:32795
 msgid "Invalid Parameters"
 msgstr ""
 
-#: static/apps/course-list/app/controller.js:97
-#: static/dist/apps/course-list/app/course-list-main.js:5851
+#: static/apps/course-list/app/controller.js:98
+#: static/dist/apps/course-list/app/course-list-main.js:6308
 msgid "Sorry, we couldn't find any courses that matched that query."
 msgstr ""
 
-#: static/apps/course-list/app/controller.js:98
-#: static/dist/apps/course-list/app/course-list-main.js:5852
+#: static/apps/course-list/app/controller.js:99
+#: static/dist/apps/course-list/app/course-list-main.js:6309
 msgid "Return to the Course List page."
 msgstr ""
 
-#: static/apps/course-list/app/controller.js:123
+#: static/apps/course-list/app/controller.js:124
 #: static/apps/learners/app/controller.js:176
-#: static/dist/apps/course-list/app/course-list-main.js:5877
-#: static/dist/apps/learners/app/learners-main.js:32798
+#: static/dist/apps/course-list/app/course-list-main.js:6334
+#: static/dist/apps/learners/app/learners-main.js:32877
 msgid "Sorry, we couldn't find the page you're looking for."
 msgstr ""
 
-#: static/apps/course-list/app/controller.js:126
+#: static/apps/course-list/app/controller.js:127
 #: static/apps/learners/app/controller.js:179
-#: static/dist/apps/course-list/app/course-list-main.js:5880
-#: static/dist/apps/learners/app/learners-main.js:32801
+#: static/dist/apps/course-list/app/course-list-main.js:6337
+#: static/dist/apps/learners/app/learners-main.js:32880
 msgid "Page Not Found"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:16
-#: static/dist/apps/course-list/app/course-list-main.js:1335
+#: static/apps/course-list/common/collections/course-list.js:51
+#: static/dist/apps/course-list/app/course-list-main.js:1486
 msgid "Course Name"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:17
-#: static/dist/apps/course-list/app/course-list-main.js:1336
+#: static/apps/course-list/common/collections/course-list.js:52
+#: static/dist/apps/course-list/app/course-list-main.js:1487
 msgid "Start Date"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:18
-#: static/dist/apps/course-list/app/course-list-main.js:1337
+#: static/apps/course-list/common/collections/course-list.js:53
+#: static/dist/apps/course-list/app/course-list-main.js:1488
 msgid "End Date"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:19
-#: static/dist/apps/course-list/app/course-list-main.js:1338
+#: static/apps/course-list/common/collections/course-list.js:54
+#: static/dist/apps/course-list/app/course-list-main.js:1489
 msgid "Total Enrollment"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:20
-#: static/dist/apps/course-list/app/course-list-main.js:1339
+#: static/apps/course-list/common/collections/course-list.js:55
+#: static/dist/apps/course-list/app/course-list-main.js:1490
 #: static/dist/js/enrollment-activity-main.js:25422
 #: static/dist/js/enrollment-demographics-gender-main.js:25539
 #: static/dist/js/enrollment-geography-main.js:22484
@@ -229,178 +260,188 @@ msgstr ""
 msgid "Current Enrollment"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:21
-#: static/dist/apps/course-list/app/course-list-main.js:1340
+#: static/apps/course-list/common/collections/course-list.js:56
+#: static/dist/apps/course-list/app/course-list-main.js:1491
 msgid "Change Last Week"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:22
-#: static/dist/apps/course-list/app/course-list-main.js:1341
+#: static/apps/course-list/common/collections/course-list.js:57
+#: static/dist/apps/course-list/app/course-list-main.js:1492
 msgid "Verified Enrollment"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:24
-#: static/dist/apps/course-list/app/course-list-main.js:1343
+#: static/apps/course-list/common/collections/course-list.js:59
+#: static/dist/apps/course-list/app/course-list-main.js:1494
 msgid "Availability"
 msgstr ""
 
-#: static/apps/course-list/common/collections/course-list.js:25
-#: static/dist/apps/course-list/app/course-list-main.js:1344
+#: static/apps/course-list/common/collections/course-list.js:60
+#: static/dist/apps/course-list/app/course-list-main.js:1495
 msgid "Pacing Type"
 msgstr ""
 
-#: static/apps/course-list/list/views/controls.js:32
-#: static/dist/apps/course-list/app/course-list-main.js:4776
+#: static/apps/course-list/list/views/controls.js:42
+#: static/dist/apps/course-list/app/course-list-main.js:5233
 msgid "Find a course"
 msgstr ""
 
-#: static/apps/course-list/list/views/course-list.js:73
-#: static/dist/apps/course-list/app/course-list-main.js:5733
+#: static/apps/course-list/list/views/controls.js:52
+#: static/dist/apps/course-list/app/course-list-main.js:5243
+msgid "availability"
+msgstr ""
+
+#: static/apps/course-list/list/views/controls.js:60
+#: static/dist/apps/course-list/app/course-list-main.js:5251
+msgid "pacing_type"
+msgstr ""
+
+#: static/apps/course-list/list/views/course-list.js:68
+#: static/dist/apps/course-list/app/course-list-main.js:6204
 msgid "Course list controls"
 msgstr ""
 
 #: static/apps/course-list/list/views/results.js:47
-#: static/dist/apps/course-list/app/course-list-main.js:5585
+#: static/dist/apps/course-list/app/course-list-main.js:6061
 msgid "No courses matched your criteria."
 msgstr ""
 
 #: static/apps/course-list/list/views/results.js:49
 #: static/apps/learners/roster/views/results.js:49
-#: static/dist/apps/course-list/app/course-list-main.js:5587
-#: static/dist/apps/learners/app/learners-main.js:32054
+#: static/dist/apps/course-list/app/course-list-main.js:6063
+#: static/dist/apps/learners/app/learners-main.js:32109
 msgid "Try a different search."
 msgstr ""
 
 #: static/apps/course-list/list/views/results.js:52
 #: static/apps/learners/roster/views/results.js:52
-#: static/dist/apps/course-list/app/course-list-main.js:5590
-#: static/dist/apps/learners/app/learners-main.js:32057
+#: static/dist/apps/course-list/app/course-list-main.js:6066
+#: static/dist/apps/learners/app/learners-main.js:32112
 msgid "Try clearing the filters."
 msgstr ""
 
 #: static/apps/course-list/list/views/results.js:55
-#: static/dist/apps/course-list/app/course-list-main.js:5593
+#: static/dist/apps/course-list/app/course-list-main.js:6069
 msgid "No course data is currently available for your course."
 msgstr ""
 
 #: static/apps/course-list/list/views/results.js:57
-#: static/dist/apps/course-list/app/course-list-main.js:5595
+#: static/dist/apps/course-list/app/course-list-main.js:6071
 msgid ""
 "No courses are enrolled, or course activity data has not yet been processed. "
 "Data is updated every day, so check back regularly for up-to-date metrics."
 msgstr ""
 
-#: static/apps/course-list/list/views/search.js:60
-#: static/dist/apps/course-list/app/course-list-main.js:4696
+#: static/apps/course-list/list/views/search.js:72
+#: static/dist/apps/course-list/app/course-list-main.js:5134
 msgid "Search courses"
 msgstr ""
 
-#: static/apps/course-list/list/views/search.js:61
+#: static/apps/course-list/list/views/search.js:73
 #: static/apps/learners/roster/views/search.js:56
-#: static/dist/apps/course-list/app/course-list-main.js:4697
-#: static/dist/apps/learners/app/learners-main.js:32371
+#: static/dist/apps/course-list/app/course-list-main.js:5135
+#: static/dist/apps/learners/app/learners-main.js:32437
 msgid "search"
 msgstr ""
 
-#: static/apps/course-list/list/views/search.js:62
+#: static/apps/course-list/list/views/search.js:74
 #: static/apps/learners/roster/views/search.js:57
-#: static/dist/apps/course-list/app/course-list-main.js:4698
-#: static/dist/apps/learners/app/learners-main.js:32372
+#: static/dist/apps/course-list/app/course-list-main.js:5136
+#: static/dist/apps/learners/app/learners-main.js:32438
 msgid "clear search"
 msgstr ""
 
 #: static/apps/course-list/list/views/table.js:43
-#: static/dist/apps/course-list/app/course-list-main.js:5520
+#: static/dist/apps/course-list/app/course-list-main.js:5996
 msgid "Date not available"
 msgstr ""
 
 #: static/apps/learners/app/controller.js:59
-#: static/dist/apps/learners/app/learners-main.js:32681
+#: static/dist/apps/learners/app/learners-main.js:32760
 msgid "Learner Roster"
 msgstr ""
 
 #: static/apps/learners/app/controller.js:95
-#: static/dist/apps/learners/app/learners-main.js:32717
+#: static/dist/apps/learners/app/learners-main.js:32796
 msgid "Sorry, we couldn't find any learners who matched that query."
 msgstr ""
 
 #: static/apps/learners/app/controller.js:96
-#: static/dist/apps/learners/app/learners-main.js:32718
+#: static/dist/apps/learners/app/learners-main.js:32797
 msgid "Return to the Learners page."
 msgstr ""
 
 #: static/apps/learners/app/controller.js:104
-#: static/dist/apps/learners/app/learners-main.js:32726
+#: static/dist/apps/learners/app/learners-main.js:32805
 msgid "Learners"
 msgstr ""
 
 #: static/apps/learners/app/controller.js:136
-#: static/dist/apps/learners/app/learners-main.js:32758
+#: static/dist/apps/learners/app/learners-main.js:32837
 msgid "Learner Details"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:17
-#: static/dist/apps/learners/app/learners-main.js:1950
+#: static/dist/apps/learners/app/learners-main.js:1994
 msgid "Name (Username)"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:18
-#: static/dist/apps/learners/app/learners-main.js:1951
+#: static/dist/apps/learners/app/learners-main.js:1995
 msgid "Problems Tried"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:19
 #: static/apps/learners/detail/views/engagement-table.js:33
 #: static/apps/learners/detail/views/engagement-timeline.js:35
-#: static/dist/apps/learners/app/learners-main.js:1952
-#: static/dist/apps/learners/app/learners-main.js:2130
-#: static/dist/apps/learners/app/learners-main.js:27554
+#: static/dist/apps/learners/app/learners-main.js:1996
+#: static/dist/apps/learners/app/learners-main.js:2174
+#: static/dist/apps/learners/app/learners-main.js:27598
 msgid "Problems Correct"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:20
-#: static/dist/apps/learners/app/learners-main.js:1953
+#: static/dist/apps/learners/app/learners-main.js:1997
 msgid "Attempts per Problem Correct"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:21
-#: static/dist/apps/learners/app/learners-main.js:1954
+#: static/dist/apps/learners/app/learners-main.js:1998
 #: static/dist/js/engagement-video-content-main.js:25598
 #: static/js/engagement-video-content-main.js:33
 msgid "Videos"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:22
-#: static/dist/apps/learners/app/learners-main.js:1955
+#: static/dist/apps/learners/app/learners-main.js:1999
 msgid "Discussions"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:24
-#: static/dist/apps/learners/app/learners-main.js:1957
+#: static/dist/apps/learners/app/learners-main.js:2001
 msgid "Segments"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:25
-#: static/dist/apps/learners/app/learners-main.js:1958
+#: static/dist/apps/learners/app/learners-main.js:2002
 msgid "Segments to Ignore"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:26
 #: static/apps/learners/detail/views/learner-detail.js:101
-#: static/dist/apps/learners/app/learners-main.js:1959
-#: static/dist/apps/learners/app/learners-main.js:27808
+#: static/dist/apps/learners/app/learners-main.js:2003
+#: static/dist/apps/learners/app/learners-main.js:27852
 msgid "Cohort"
 msgstr ""
 
 #: static/apps/learners/common/collections/learners.js:27
-#: static/dist/apps/learners/app/learners-main.js:1960
+#: static/dist/apps/learners/app/learners-main.js:2004
 msgid "Enrollment Mode"
 msgstr ""
 
 #: static/apps/learners/detail/views/engagement-table.js:22
 #: static/apps/learners/detail/views/engagement-timeline.js:43
-#: static/dist/apps/learners/app/learners-main.js:2119
-#: static/dist/apps/learners/app/learners-main.js:27562
+#: static/dist/apps/learners/app/learners-main.js:2163
+#: static/dist/apps/learners/app/learners-main.js:27606
 #: static/dist/js/enrollment-activity-main.js:25417
 #: static/dist/js/enrollment-demographics-gender-main.js:25538
 #: static/js/enrollment-activity-main.js:22
@@ -410,177 +451,180 @@ msgstr ""
 
 #: static/apps/learners/detail/views/engagement-table.js:27
 #: static/apps/learners/detail/views/engagement-timeline.js:31
-#: static/dist/apps/learners/app/learners-main.js:2124
-#: static/dist/apps/learners/app/learners-main.js:27550
+#: static/dist/apps/learners/app/learners-main.js:2168
+#: static/dist/apps/learners/app/learners-main.js:27594
 msgid "Discussion Contributions"
 msgstr ""
 
 #: static/apps/learners/detail/views/engagement-table.js:39
 #: static/apps/learners/detail/views/engagement-timeline.js:39
-#: static/dist/apps/learners/app/learners-main.js:2136
-#: static/dist/apps/learners/app/learners-main.js:27558
+#: static/dist/apps/learners/app/learners-main.js:2180
+#: static/dist/apps/learners/app/learners-main.js:27602
 msgid "Videos Viewed"
 msgstr ""
 
 #: static/apps/learners/detail/views/engagement-timeline.js:47
-#: static/dist/apps/learners/app/learners-main.js:27566
+#: static/dist/apps/learners/app/learners-main.js:27610
 msgid "Value"
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:28
-#: static/dist/apps/learners/app/learners-main.js:27735
+#: static/dist/apps/learners/app/learners-main.js:27779
 msgid "Engagement Activity"
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:29
-#: static/dist/apps/learners/app/learners-main.js:27736
+#: static/dist/apps/learners/app/learners-main.js:27780
 msgid "Daily Activity"
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:30
-#: static/dist/apps/learners/app/learners-main.js:27737
+#: static/dist/apps/learners/app/learners-main.js:27781
 msgid "Activity Over Time"
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:95
-#: static/dist/apps/learners/app/learners-main.js:27802
+#: static/dist/apps/learners/app/learners-main.js:27846
 msgid "Enrollment"
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:106
-#: static/dist/apps/learners/app/learners-main.js:27813
+#: static/dist/apps/learners/app/learners-main.js:27857
 msgid "Last Accessed"
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:109
 #: static/apps/learners/detail/views/learner-summary-field.js:44
 #: static/apps/learners/roster/views/activity-date-range.js:16
-#: static/dist/apps/learners/app/learners-main.js:27647
-#: static/dist/apps/learners/app/learners-main.js:27816
-#: static/dist/apps/learners/app/learners-main.js:31109
+#: static/dist/apps/learners/app/learners-main.js:27691
+#: static/dist/apps/learners/app/learners-main.js:27860
+#: static/dist/apps/learners/app/learners-main.js:31153
 msgid "n/a"
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:139
-#: static/dist/apps/learners/app/learners-main.js:27846
+#: static/dist/apps/learners/app/learners-main.js:27890
 msgid "Check back daily for up-to-date data."
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:149
-#: static/dist/apps/learners/app/learners-main.js:27856
+#: static/dist/apps/learners/app/learners-main.js:27900
 msgid "No course activity data is available for this learner."
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-detail.js:156
-#: static/dist/apps/learners/app/learners-main.js:27863
+#: static/dist/apps/learners/app/learners-main.js:27907
 msgid "No learner data is available."
 msgstr ""
 
 #: static/apps/learners/detail/views/learner-return.js:12
-#: static/dist/apps/learners/app/learners-main.js:32613
+#: static/dist/apps/learners/app/learners-main.js:32692
 msgid "Return to Learners"
 msgstr ""
 
 #: static/apps/learners/roster/views/active-filters.js:19
-#: static/dist/apps/learners/app/learners-main.js:31223
+#: static/dist/apps/learners/app/learners-main.js:31276
 msgid "Cohort: <%= filterVal %>"
 msgstr ""
 
 #: static/apps/learners/roster/views/active-filters.js:23
-#: static/dist/apps/learners/app/learners-main.js:31227
+#: static/dist/apps/learners/app/learners-main.js:31280
 msgid "Enrollment Track: <%= filterVal %>"
 msgstr ""
 
 #: static/apps/learners/roster/views/active-filters.js:28
-#: static/dist/apps/learners/app/learners-main.js:31232
+#: static/dist/apps/learners/app/learners-main.js:31285
 #: static/dist/js/engagement-content-main.js:25386
 #: static/js/engagement-content-main.js:20
 msgid "Active Learners"
 msgstr ""
 
 #: static/apps/learners/roster/views/activity-date-range.js:11
-#: static/dist/apps/learners/app/learners-main.js:31104
+#: static/dist/apps/learners/app/learners-main.js:31148
 msgid "Activity between <%- startDate %> - <%- endDate %>"
 msgstr ""
 
 #: static/apps/learners/roster/views/base-header-cell.js:10
-#: static/dist/apps/learners/app/learners-main.js:31854
+#: static/dist/apps/learners/app/learners-main.js:31909
 msgid "The name and username of this learner. Click to sort by username."
 msgstr ""
 
 #: static/apps/learners/roster/views/base-header-cell.js:11
-#: static/dist/apps/learners/app/learners-main.js:31855
+#: static/dist/apps/learners/app/learners-main.js:31910
 msgid "Number of unique problems this learner attempted."
 msgstr ""
 
 #: static/apps/learners/roster/views/base-header-cell.js:12
-#: static/dist/apps/learners/app/learners-main.js:31856
+#: static/dist/apps/learners/app/learners-main.js:31911
 msgid "Number of unique problems the learner answered correctly."
 msgstr ""
 
 #: static/apps/learners/roster/views/base-header-cell.js:13
-#: static/dist/apps/learners/app/learners-main.js:31857
+#: static/dist/apps/learners/app/learners-main.js:31912
 msgid "Number of unique videos this learner played."
 msgstr ""
 
 #: static/apps/learners/roster/views/base-header-cell.js:15
-#: static/dist/apps/learners/app/learners-main.js:31859
+#: static/dist/apps/learners/app/learners-main.js:31914
 msgid ""
 "Average number of attempts per correct problem. Learners with a relatively "
 "high value compared to their peers may be struggling."
 msgstr ""
 
 #: static/apps/learners/roster/views/base-header-cell.js:17
-#: static/dist/apps/learners/app/learners-main.js:31861
+#: static/dist/apps/learners/app/learners-main.js:31916
 msgid ""
 "Number of contributions by this learner, including posts, responses, and "
 "comments."
 msgstr ""
 
-#: static/apps/learners/roster/views/controls.js:45
-#: static/dist/apps/learners/app/learners-main.js:32460
+#: static/apps/learners/roster/views/controls.js:47
+#: static/dist/apps/learners/app/learners-main.js:32528
 msgid "Find a learner"
 msgstr ""
 
-#: static/apps/learners/roster/views/controls.js:55
-#: static/dist/apps/learners/app/learners-main.js:32470
+#: static/apps/learners/roster/views/controls.js:60
+#: static/dist/apps/learners/app/learners-main.js:32541
 msgid "Cohort Groups"
 msgstr ""
 
-#: static/apps/learners/roster/views/controls.js:53
+#: static/apps/learners/roster/views/controls.js:58
+#: static/dist/apps/learners/app/learners-main.js:32539
 msgid "cohort"
 msgstr ""
 
-#: static/apps/learners/roster/views/controls.js:64
-#: static/dist/apps/learners/app/learners-main.js:32479
+#: static/apps/learners/roster/views/controls.js:72
+#: static/dist/apps/learners/app/learners-main.js:32553
 msgid "Enrollment Tracks"
 msgstr ""
 
-#: static/apps/learners/roster/views/controls.js:62
+#: static/apps/learners/roster/views/controls.js:70
+#: static/dist/apps/learners/app/learners-main.js:32551
 msgid "enrollment_mode"
 msgstr ""
 
-#: static/apps/learners/roster/views/controls.js:76
-#: static/dist/apps/learners/app/learners-main.js:32491
+#: static/apps/learners/roster/views/controls.js:88
+#: static/dist/apps/learners/app/learners-main.js:32569
 msgid "Hide Inactive Learners"
 msgstr ""
 
-#: static/apps/learners/roster/views/controls.js:71
+#: static/apps/learners/roster/views/controls.js:82
+#: static/dist/apps/learners/app/learners-main.js:32563
 msgid "ignore_segments"
 msgstr ""
 
 #: static/apps/learners/roster/views/results.js:47
-#: static/dist/apps/learners/app/learners-main.js:32052
+#: static/dist/apps/learners/app/learners-main.js:32107
 msgid "No learners matched your criteria."
 msgstr ""
 
 #: static/apps/learners/roster/views/results.js:55
-#: static/dist/apps/learners/app/learners-main.js:32060
+#: static/dist/apps/learners/app/learners-main.js:32115
 msgid "No learner data is currently available for your course."
 msgstr ""
 
 #: static/apps/learners/roster/views/results.js:57
-#: static/dist/apps/learners/app/learners-main.js:32062
+#: static/dist/apps/learners/app/learners-main.js:32117
 msgid ""
 "No learners are enrolled, or course activity data has not yet been "
 "processed. Data is updated every day, so check back regularly for up-to-date "
@@ -588,17 +632,17 @@ msgid ""
 msgstr ""
 
 #: static/apps/learners/roster/views/roster.js:89
-#: static/dist/apps/learners/app/learners-main.js:32592
+#: static/dist/apps/learners/app/learners-main.js:32671
 msgid "Learner roster controls"
 msgstr ""
 
 #: static/apps/learners/roster/views/search.js:55
-#: static/dist/apps/learners/app/learners-main.js:32370
+#: static/dist/apps/learners/app/learners-main.js:32436
 msgid "Search learners"
 msgstr ""
 
 #: static/apps/learners/roster/views/table.js:40
-#: static/dist/apps/learners/app/learners-main.js:31940
+#: static/dist/apps/learners/app/learners-main.js:31995
 msgid "N/A"
 msgstr ""
 
