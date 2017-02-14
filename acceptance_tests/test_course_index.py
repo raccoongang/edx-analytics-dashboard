@@ -2,7 +2,10 @@ from bok_choy.promise import EmptyPromise
 from bok_choy.web_app_test import WebAppTest
 from selenium.webdriver.common.keys import Keys
 
-from acceptance_tests import TEST_COURSE_ID
+from acceptance_tests import (
+    ENABLE_COURSE_LIST_FILTERS,
+    TEST_COURSE_ID,
+)
 from acceptance_tests.mixins import AnalyticsDashboardWebAppTestMixin
 from acceptance_tests.pages import CourseIndexPage
 
@@ -25,7 +28,8 @@ class CourseIndexTests(AnalyticsDashboardWebAppTestMixin, WebAppTest):
         self._test_clear_input()
         self._test_clear_active_filter()
         self._test_clear_all_filters()
-        self._test_filters()
+        if ENABLE_COURSE_LIST_FILTERS:
+            self._test_filters()
 
     def _test_course_list(self):
         """
