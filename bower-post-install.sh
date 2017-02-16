@@ -30,4 +30,4 @@ done
 
 # pre-compile the pattern library to improve sass compilation performance
 echo "Pre-compiling edX pattern library..."
-sassc ${PATTERN_LIBRARY_SASS_PATH}/edx-pattern-library-ltr.scss ${PATTERN_LIBRARY_SASS_PATH}/edx-pattern-library-ltr-compiled.scss
+/edx/app/insights/venvs/insights/bin/sassc ${PATTERN_LIBRARY_SASS_PATH}/edx-pattern-library-ltr.scss ${PATTERN_LIBRARY_SASS_PATH}/edx-pattern-library-ltr-compiled.scss
